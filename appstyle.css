@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+html {
+    font-size: 120%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(83, 73, 73);
+    display: flex;
+    background-color: f5e6e5;
+    text-align:center;
+}
+
+.title {
+    text-align: center;
+    font-size: 300%;
+}
