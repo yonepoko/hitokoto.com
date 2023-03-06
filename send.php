@@ -27,7 +27,7 @@ $created_at = date("Y-m-d H:i:s");
 $pdo = new PDO(
     "mysql:dbname=sample;host=localhost","root","",array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET CHARACTER SET `utf8`")
 );
-//ここで「DB接続NG」だった場合、接続情報に誤りがあります。
+
 if ($pdo) {
     
 } else {
@@ -40,7 +40,7 @@ $regist->bindParam(":name", $name);
 $regist->bindParam(":contents", $contents);
 $regist->bindParam(":created_at", $created_at);
 $regist->execute();
-//ここで「登録失敗」だった場合、SQL文に誤りがあります。
+
 if ($regist) {
     
 } else {
